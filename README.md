@@ -29,12 +29,29 @@ git clone https://github.com/ket4n/discord-bot.git
 ```
 cd discord-bot
 ```
+
+- Create a virtual environment (Important: Don't skip this step, it's crucial to create a virtual environment to install these libraries as their versions are specified and they may get deprecated in future)
+```
+python -m venv venv
+```
+
+- Activate the Virtual Environment
+1. For Windows:-
+```
+.\venv\Scripts\activate
+```
+2. For Linux:-
+```
+.\venv\bin\activate
+```
+
 - Install dependencies:
 ```
 pip install -r requirements.txt
 ```
+
 **Open the code and replace the bot token with your own in the appropriate place.**
-- Run the bot:
+- Run the bot (make sure the venv is activated before running this command):
 ```
 python bot.py
 ```
